@@ -95,16 +95,12 @@
 					armv7,
 					armv7s,
 				);
-				"ARCHS[sdk=macosx*]" = (
-					x86_64,
-					i386,
-				);
 				COPY_PHASE_STRIP = NO;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = "$(PLATFORM_NAME)";
+				SDKROOT = iphoneos6.1;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
-				VALID_ARCHS = "i386 x86_64 armv7 armv6 armv7s";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -115,15 +111,11 @@
 					armv7,
 					armv7s,
 				);
-				"ARCHS[sdk=macosx*]" = (
-					x86_64,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
-				SDKROOT = "$(PLATFORM_NAME)";
+				SDKROOT = iphoneos6.1;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
-				VALID_ARCHS = "i386 x86_64 armv7 armv6 armv7s";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -137,6 +129,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = crypto;
 			};
 			name = Debug;
